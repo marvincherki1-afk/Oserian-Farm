@@ -1,0 +1,94 @@
+/* 1. COLOURS AND FONTS (change them here and the whole site changes) */
+:root { --dark: #4a1330; --accent: #ff7f6b; --page: #f9ddd0; --alt: #efc7c4; --card: #fbeadf; --text: #2b1220; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+body { font-family: "Nunito Sans", Arial, sans-serif; color: var(--text); background: var(--page); line-height: 1.6; }
+h1, h2, h3, .brand-name { font-family: "Playfair Display", "Arial Narrow", Arial, sans-serif; font-weight: 700; }
+img { display: block; max-width: 100%; }
+
+/* 2. HEADER */
+.site-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: .6rem 1.25rem; background: var(--dark); position: sticky; top: 0; z-index: 10; }
+.brand { display: flex; align-items: center; gap: .7rem; text-decoration: none; }
+.mono { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 10px; background: var(--accent); color: var(--dark); font-family: "Playfair Display", Arial, sans-serif; font-weight: 700; font-size: 1.3rem; }
+.brand-name { color: var(--accent); font-size: 1.25rem; line-height: 1.1; }
+.menu-btn { background: none; border: 1px solid var(--accent); color: var(--accent); padding: .5rem 1rem; border-radius: 6px; font-size: 1rem; }
+.nav { display: none; width: 100%; flex-direction: column; gap: .9rem; padding: 1rem 0 .5rem; }
+.nav.open { display: flex; }
+.nav a { color: var(--page); text-decoration: none; font-weight: 700; }
+.nav a:hover, .nav a:focus { color: var(--accent); }
+
+/* 3. HERO (phone: whole photo on top, text underneath) */
+.hero { background: var(--dark); color: var(--page); }
+.hero-img { width: 100%; height: auto; }
+.hero-text { padding: 1.75rem 1.25rem 2.25rem; }
+.hero h1 { font-size: 2.3rem; line-height: 1.1; max-width: 16ch; }
+.hero p { margin: 1rem 0 1.5rem; max-width: 42ch; }
+
+/* 4. BUTTONS */
+.btn { display: inline-block; background: var(--accent); color: var(--dark); padding: .8rem 1.3rem; border: 2px solid var(--accent); border-radius: 8px; font-weight: 700; font-size: 1rem; text-decoration: none; cursor: pointer; margin: 0 .4rem .6rem 0; }
+.btn:hover, .btn:focus { background: var(--page); border-color: var(--page); }
+.btn.ghost { background: transparent; color: var(--page); border-color: var(--page); }
+.btn.ghost:hover, .btn.ghost:focus { background: var(--page); color: var(--dark); }
+.btn-wa { display: inline-block; background: #25d366; color: #fff; padding: .6rem 1rem; border-radius: 8px; font-weight: 700; font-size: .95rem; text-decoration: none; }
+.btn-wa:hover, .btn-wa:focus { background: #1da851; }
+
+/* 5. SECTIONS */
+.section { padding: 3rem 1.25rem; max-width: 1000px; margin: 0 auto; }
+.section h2 { font-size: 2rem; margin-bottom: 1.5rem; color: var(--dark); }
+.alt { max-width: none; background: var(--alt); }
+.alt > * { max-width: 1000px; margin-left: auto; margin-right: auto; }
+
+/* 6. CARDS */
+.cards { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+.card { background: var(--card); border-radius: 14px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,.16); }
+.card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.card-body { display: flex; justify-content: space-between; align-items: center; gap: .5rem; padding: 1rem 1rem .5rem; }
+.card-body h3 { font-size: 1.2rem; color: var(--dark); }
+.card-actions { padding: .25rem 1rem 1rem; }
+.card-actions .btn-wa { display: block; text-align: center; }
+.price { background: var(--accent); color: var(--dark); font-weight: 700; padding: .3rem .7rem; border-radius: 20px; font-size: .9rem; white-space: nowrap; }
+.more-title { font-size: 1.4rem; color: var(--dark); margin: 2.5rem 0 .5rem; }
+.price-list { list-style: none; }
+.price-list li { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; padding: .8rem 0; border-bottom: 1px solid rgba(0,0,0,.2); }
+.price-list .svc { flex: 1 1 9rem; font-weight: 700; }
+
+/* 7. GALLERY AND REVIEWS */
+.gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: .75rem; }
+.gallery img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 10px; }
+blockquote { border-left: 4px solid var(--accent); padding: .5rem 1rem; margin-bottom: 1.25rem; font-size: 1.1rem; }
+cite { display: block; margin-top: .4rem; font-size: .9rem; color: var(--dark); font-style: normal; font-weight: 700; }
+
+/* 8. FORM AND CONTACT */
+form { display: grid; gap: .5rem; max-width: 520px; }
+label { font-weight: 700; margin-top: .5rem; }
+input, select, textarea { padding: .75rem; font-size: 1rem; font-family: inherit; background: var(--card); border: 1px solid rgba(0,0,0,.35); border-radius: 6px; }
+#formMsg { color: var(--dark); min-height: 1.5rem; }
+.contact-line { margin-bottom: .4rem; }
+.contact-actions { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
+.contact-actions .btn { margin: 0; }
+
+/* 9. FOOTER */
+.site-footer { background: var(--dark); color: var(--page); padding: 2rem 1.25rem 6rem; text-align: center; }
+.footer-brand { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1.2rem; }
+.footer-brand .mono { width: 72px; height: 72px; font-size: 1.9rem; border-radius: 14px; }
+.footer-brand .brand-name { font-size: 1.7rem; text-align: left; }
+
+/* 10. FLOATING CALL AND WHATSAPP BUTTONS */
+.float-btns { position: fixed; right: .9rem; bottom: .9rem; display: flex; flex-direction: column; gap: .6rem; z-index: 9999; }
+.fab { display: flex; align-items: center; justify-content: center; gap: .5rem; padding: .75rem 1.1rem; border-radius: 30px; font-weight: 700; text-decoration: none; color: #fff; box-shadow: 0 4px 12px rgba(0,0,0,.35); }
+.fab.call { background: var(--dark); border: 2px solid var(--accent); color: var(--accent); }
+.fab.wa { background: #25d366; }
+
+/* 11. LAPTOP AND BIGGER (photo becomes the background) */
+@media (min-width: 768px) {
+  .site-header { padding: .6rem 3rem; }
+  .menu-btn { display: none; }
+  .nav { display: flex; flex-direction: row; width: auto; padding: 0; gap: 1.5rem; }
+  .hero { position: relative; min-height: 80vh; display: flex; align-items: center; overflow: hidden; }
+  .hero-img { position: absolute; inset: 0; height: 100%; object-fit: cover; }
+  .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(100deg, rgba(74,19,48,.95) 35%, rgba(74,19,48,.4)); }
+  .hero-text { position: relative; z-index: 1; padding: 4rem 3rem; max-width: 40rem; }
+  .hero h1 { font-size: 3.8rem; }
+  .cards { grid-template-columns: repeat(3, 1fr); }
+  .gallery { grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+}

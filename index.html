@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oserian Farm | Flower farm in Nakuru Town</title>
+  <meta name="description" content="Oserian Farm, Nakuru Town. Roses, carnations, bouquets and event flowers, cut fresh and delivered. Order on WhatsApp.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+
+  <!-- 1. HEADER: badge and name -->
+  <header class="site-header">
+    <a href="#home" class="brand" aria-label="Oserian Farm home"><span class="mono">OF</span><span class="brand-name">Oserian Farm</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">Menu</button>
+    <nav id="nav" class="nav">
+      <a href="#services">Flowers</a>
+      <a href="#gallery">Our blooms</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#order">Order</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 2. HERO: add your photo as images/hero.jpg -->
+    <section class="hero" id="home">
+      <img src="images/hero.jpg" alt="Oserian Farm" class="hero-img" onerror="this.remove()">
+      <div class="hero-text">
+        <h1>Fresh cut flowers, grown with love.</h1>
+        <p>Roses, carnations, summer flowers and ready bouquets, cut fresh and delivered. Open Monday to Saturday, 7am to 6pm.</p>
+        <a class="btn" href="#order">Order flowers</a>
+        <a class="btn ghost" href="#services">See prices</a>
+        <a class="btn ghost" href="#contact">Contact us</a>
+      </div>
+    </section>
+
+    <!-- 3. MAIN PRODUCTS OR SERVICES -->
+    <section class="section" id="services">
+      <h2>Our flowers and prices</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="images/roses.jpg" alt="Roses" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder.svg'">
+          <div class="card-body"><h3>Roses</h3><span class="price">from KES 30 a stem</span></div>
+          <div class="card-actions"><a class="btn-wa" href="https://wa.me/254789509623?text=Hello%20Oserian%20Farm%2C%20I%20would%20like%20to%20order%20Roses." target="_blank" rel="noopener">Order on WhatsApp</a></div>
+        </article>
+        <article class="card">
+          <img src="images/carnations.jpg" alt="Carnations" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder.svg'">
+          <div class="card-body"><h3>Carnations</h3><span class="price">from KES 15 a stem</span></div>
+          <div class="card-actions"><a class="btn-wa" href="https://wa.me/254789509623?text=Hello%20Oserian%20Farm%2C%20I%20would%20like%20to%20order%20Carnations." target="_blank" rel="noopener">Order on WhatsApp</a></div>
+        </article>
+        <article class="card">
+          <img src="images/summer.jpg" alt="Summer flowers" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder.svg'">
+          <div class="card-body"><h3>Summer flowers</h3><span class="price">from KES 20 a stem</span></div>
+          <div class="card-actions"><a class="btn-wa" href="https://wa.me/254789509623?text=Hello%20Oserian%20Farm%2C%20I%20would%20like%20to%20order%20Summer%20flowers." target="_blank" rel="noopener">Order on WhatsApp</a></div>
+        </article>
+        <article class="card">
+          <img src="images/bouquets.jpg" alt="Ready bouquets" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder.svg'">
+          <div class="card-body"><h3>Ready bouquets</h3><span class="price">from KES 800</span></div>
+          <div class="card-actions"><a class="btn-wa" href="https://wa.me/254789509623?text=Hello%20Oserian%20Farm%2C%20I%20would%20like%20to%20order%20Ready%20bouquets." target="_blank" rel="noopener">Order on WhatsApp</a></div>
+        </article>
+        <article class="card">
+          <img src="images/wedding.jpg" alt="Wedding and event flowers" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder.svg'">
+          <div class="card-body"><h3>Wedding and event flowers</h3><span class="price">Ask for a quote</span></div>
+          <div class="card-actions"><a class="btn-wa" href="https://wa.me/254789509623?text=Hello%20Oserian%20Farm%2C%20I%20would%20like%20to%20order%20Wedding%20and%20event%20flowers." target="_blank" rel="noopener">Order on WhatsApp</a></div>
+        </article>
+        <article class="card">
+          <img src="images/wholesale.jpg" alt="Wholesale boxes" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder.svg'">
+          <div class="card-body"><h3>Wholesale boxes</h3><span class="price">Ask for a quote</span></div>
+          <div class="card-actions"><a class="btn-wa" href="https://wa.me/254789509623?text=Hello%20Oserian%20Farm%2C%20I%20would%20like%20to%20order%20Wholesale%20boxes." target="_blank" rel="noopener">Order on WhatsApp</a></div>
+        </article>
+      </div>
+      <h3 class="more-title">Popular orders</h3>
+      <ul class="price-list">
+        <li><span class="svc">Rose bouquet (12 stems)</span><span class="price">KES 800</span><a class="btn-wa" href="https://wa.me/254789509623?text=Hello%20Oserian%20Farm%2C%20I%20would%20like%20to%20order%20Rose%20bouquet%20%2812%20stems%29." target="_blank" rel="noopener">Order on WhatsApp</a></li>
+        <li><span class="svc">Mixed flower bouquet</span><span class="price">KES 1,500</span><a class="btn-wa" href="https://wa.me/254789509623?text=Hello%20Oserian%20Farm%2C%20I%20would%20like%20to%20order%20Mixed%20flower%20bouquet." target="_blank" rel="noopener">Order on WhatsApp</a></li>
+        <li><span class="svc">Single rose stem</span><span class="price">KES 40</span><a class="btn-wa" href="https://wa.me/254789509623?text=Hello%20Oserian%20Farm%2C%20I%20would%20like%20to%20order%20Single%20rose%20stem." target="_blank" rel="noopener">Order on WhatsApp</a></li>
+        <li><span class="svc">Carnation bunch (10 stems)</span><span class="price">KES 250</span><a class="btn-wa" href="https://wa.me/254789509623?text=Hello%20Oserian%20Farm%2C%20I%20would%20like%20to%20order%20Carnation%20bunch%20%2810%20stems%29." target="_blank" rel="noopener">Order on WhatsApp</a></li>
+        <li><span class="svc">Gift box with flowers</span><span class="price">KES 2,500</span><a class="btn-wa" href="https://wa.me/254789509623?text=Hello%20Oserian%20Farm%2C%20I%20would%20like%20to%20order%20Gift%20box%20with%20flowers." target="_blank" rel="noopener">Order on WhatsApp</a></li>
+        <li><span class="svc">Delivery within town</span><span class="price">KES 300</span><a class="btn-wa" href="https://wa.me/254789509623?text=Hello%20Oserian%20Farm%2C%20I%20would%20like%20to%20order%20Delivery%20within%20town." target="_blank" rel="noopener">Order on WhatsApp</a></li>
+      </ul>
+    </section>
+
+    <!-- 4. GALLERY -->
+    <section class="section alt" id="gallery">
+      <h2>Our blooms</h2>
+      <div class="gallery">
+        <img src="images/g1.jpg" alt="Flower photo 1" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder.svg'">
+        <img src="images/g2.jpg" alt="Flower photo 2" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder.svg'">
+        <img src="images/g3.jpg" alt="Flower photo 3" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder.svg'">
+        <img src="images/g4.jpg" alt="Flower photo 4" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder.svg'">
+      </div>
+    </section>
+
+    <!-- 5. REVIEWS -->
+    <section class="section" id="reviews">
+      <h2>What customers say</h2>
+      <blockquote>The roses arrived fresh and lasted two weeks. My wife loved them.<cite>Daniel, customer</cite></blockquote>
+      <blockquote>They did all the flowers for our wedding, and everything was perfect.<cite>Esther, bride</cite></blockquote>
+    </section>
+
+    <!-- 6. FORM -->
+    <section class="section alt" id="order">
+      <h2>Order flowers on WhatsApp</h2>
+      <form id="bookForm">
+        <label for="name">Your name</label>
+        <input type="text" id="name" required>
+        <label for="occasion">Occasion</label>
+        <select id="occasion" class="q" data-label="Occasion" required>
+          <option value="">Choose one</option>
+          <option>Birthday</option>
+          <option>Wedding</option>
+          <option>Funeral</option>
+          <option>Valentine's Day</option>
+          <option>Office or event</option>
+          <option>Other</option>
+        </select>
+        <label for="need">Which flowers and how many?</label>
+        <textarea id="need" class="q" data-label="Which flowers and how many?" rows="4" required></textarea>
+        <label for="date">Delivery day</label>
+        <input type="date" id="date" class="q" data-label="Delivery day" required>
+        <button type="submit" class="btn">Send on WhatsApp</button>
+        <p id="formMsg" role="status"></p>
+      </form>
+    </section>
+
+    <!-- 7. CONTACT -->
+    <section class="section" id="contact">
+      <h2>Contact us</h2>
+      <p class="contact-line"><strong>Address:</strong> Nakuru Town (add your street here)</p>
+      <p class="contact-line"><strong>Phone:</strong> 0789 509 623</p>
+      <p class="contact-line"><strong>Hours:</strong> Monday to Saturday, 7am to 6pm</p>
+      <p class="contact-actions">
+        <a class="btn" href="tel:+254789509623">Call us</a>
+        <a class="btn-wa" href="https://wa.me/254789509623" target="_blank" rel="noopener">WhatsApp us</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- 8. FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="mono">OF</span><span class="brand-name">Oserian Farm</span></div>
+    <p>Oserian Farm, Nakuru Town</p>
+    <p>Phone: 0789 509 623</p>
+    <p style="font-size:.8rem;opacity:.7;margin-top:.6rem">Sample website design for practice. Not the official website.</p>
+  </footer>
+
+  <!-- 9. FLOATING BUTTONS -->
+  <div class="float-btns" style="position:fixed;right:14px;bottom:14px;display:flex;flex-direction:column;gap:10px;z-index:9999">
+    <a class="fab call" href="tel:+254789509623" aria-label="Call Oserian Farm"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2a1 1 0 011-.25c1.1.37 2.3.57 3.6.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.58a1 1 0 01-.25 1l-2.2 2.2z"/></svg><span>Call us</span></a>
+    <a class="fab wa" href="https://wa.me/254789509623?text=Hello%20Oserian%20Farm%2C%20I%20would%20like%20to%20ask%20a%20question." target="_blank" rel="noopener" aria-label="WhatsApp Oserian Farm"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 13.9c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.5-4c-.3-.5-1.1-1.6-1.1-2.9s.7-1.9.9-2.2a1 1 0 01.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6-.3.3c-.1.1-.3.3-.1.6a7 7 0 002.7 2.4c.3.1.5.1.7-.1l.9-1.1c.2-.2.4-.2.6-.1l2 1c.3.1.5.2.5.3 0 .2 0 .8-.2 1.3z"/></svg><span>WhatsApp</span></a>
+  </div>
+
+  <script src="script.js?v=1"></script>
+</body>
+</html>
