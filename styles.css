@@ -1,64 +1,76 @@
-/* 1. COLOURS AND FONTS (change them here and the whole site changes) */
-:root { --dark: #4a1330; --accent: #ff7f6b; --page: #f9ddd0; --alt: #efc7c4; --card: #fbeadf; --text: #2b1220; }
+/* 1. COLOURS AND FONTS (taken from the logo: deep green, gold, cream) */
+:root { --dark: #0f3d22; --accent: #c9992b; --page: #fbf8f1; --alt: #f1ecdd; --card: #ffffff; --text: #1d2a21; --leaf: #1f6b3a; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; scroll-padding-top: 84px; }
 body { font-family: "Nunito Sans", Arial, sans-serif; color: var(--text); background: var(--page); line-height: 1.6; }
-h1, h2, h3, .brand-name { font-family: "Playfair Display", "Arial Narrow", Arial, sans-serif; font-weight: 700; }
-img { display: block; max-width: 100%; }
+h1, h2, h3, .brand-name { font-family: "Playfair Display", Georgia, serif; font-weight: 700; }
+img { display: block; max-width: 100%; height: auto; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 
-/* 2. HEADER */
-.site-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: .6rem 1.25rem; background: var(--dark); position: sticky; top: 0; z-index: 10; }
-.brand { display: flex; align-items: center; gap: .7rem; text-decoration: none; }
-.mono { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 10px; background: var(--accent); color: var(--dark); font-family: "Playfair Display", Arial, sans-serif; font-weight: 700; font-size: 1.3rem; }
-.brand-name { color: var(--accent); font-size: 1.25rem; line-height: 1.1; }
-.menu-btn { background: none; border: 1px solid var(--accent); color: var(--accent); padding: .5rem 1rem; border-radius: 6px; font-size: 1rem; }
+/* 2. HEADER (cream, so the logo mark blends in) */
+.site-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: .5rem 1.25rem; background: var(--page); border-bottom: 2px solid var(--accent); position: sticky; top: 0; z-index: 10; }
+.brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; }
+.mark { width: 48px; height: 48px; border-radius: 50%; }
+.brand-name { color: var(--dark); font-size: 1.25rem; line-height: 1.1; }
+.menu-btn { background: none; border: 1px solid var(--dark); color: var(--dark); padding: .5rem 1rem; border-radius: 6px; font-size: 1rem; cursor: pointer; }
 .nav { display: none; width: 100%; flex-direction: column; gap: .9rem; padding: 1rem 0 .5rem; }
 .nav.open { display: flex; }
-.nav a { color: var(--page); text-decoration: none; font-weight: 700; }
+.nav a { color: var(--dark); text-decoration: none; font-weight: 700; }
 .nav a:hover, .nav a:focus { color: var(--accent); }
 
-/* 3. HERO (phone: whole photo on top, text underneath) */
-.hero { background: var(--dark); color: var(--page); }
-.hero-img { width: 100%; height: auto; }
-.hero-text { padding: 1.75rem 1.25rem 2.25rem; }
-.hero h1 { font-size: 2.3rem; line-height: 1.1; max-width: 16ch; }
+/* 3. HERO (phone: text first, photo below) */
+.hero { background: var(--dark); color: var(--page); display: grid; gap: 1.5rem; padding: 2.25rem 1.25rem 2rem; }
+.hero h1 { font-size: 2.4rem; line-height: 1.1; max-width: 14ch; }
 .hero p { margin: 1rem 0 1.5rem; max-width: 42ch; }
+.hero-img { width: 100%; max-width: 420px; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 16px; border: 3px solid var(--accent); justify-self: center; }
 
 /* 4. BUTTONS */
 .btn { display: inline-block; background: var(--accent); color: var(--dark); padding: .8rem 1.3rem; border: 2px solid var(--accent); border-radius: 8px; font-weight: 700; font-size: 1rem; text-decoration: none; cursor: pointer; margin: 0 .4rem .6rem 0; }
 .btn:hover, .btn:focus { background: var(--page); border-color: var(--page); }
 .btn.ghost { background: transparent; color: var(--page); border-color: var(--page); }
 .btn.ghost:hover, .btn.ghost:focus { background: var(--page); color: var(--dark); }
-.btn-wa { display: inline-block; background: #25d366; color: #fff; padding: .6rem 1rem; border-radius: 8px; font-weight: 700; font-size: .95rem; text-decoration: none; }
-.btn-wa:hover, .btn-wa:focus { background: #1da851; }
+.btn-wa { display: inline-block; background: #1a7f43; color: #fff; padding: .6rem 1rem; border-radius: 8px; font-weight: 700; font-size: .95rem; text-decoration: none; }
+.btn-wa:hover, .btn-wa:focus { background: #12602f; }
 
-/* 5. SECTIONS */
+/* 5. FACTS STRIP */
+.facts { background: var(--leaf); color: #fff; display: grid; gap: .8rem; padding: 1.25rem; }
+.facts strong { display: block; font-family: "Playfair Display", Georgia, serif; font-size: 1.1rem; }
+
+/* 6. SECTIONS */
 .section { padding: 3rem 1.25rem; max-width: 1000px; margin: 0 auto; }
 .section h2 { font-size: 2rem; margin-bottom: 1.5rem; color: var(--dark); }
 .alt { max-width: none; background: var(--alt); }
 .alt > * { max-width: 1000px; margin-left: auto; margin-right: auto; }
 
-/* 6. CARDS */
+/* 7. CARDS (real photos) */
 .cards { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
-.card { background: var(--card); border-radius: 14px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,.16); }
-.card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.card { background: var(--card); border-radius: 14px; overflow: hidden; box-shadow: 0 2px 10px rgba(15,61,34,.14); }
+.card img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
 .card-body { display: flex; justify-content: space-between; align-items: center; gap: .5rem; padding: 1rem 1rem .5rem; }
 .card-body h3 { font-size: 1.2rem; color: var(--dark); }
 .card-actions { padding: .25rem 1rem 1rem; }
 .card-actions .btn-wa { display: block; text-align: center; }
-.price { background: var(--accent); color: var(--dark); font-weight: 700; padding: .3rem .7rem; border-radius: 20px; font-size: .9rem; white-space: nowrap; }
+.price { background: var(--alt); color: var(--dark); font-weight: 700; padding: .3rem .7rem; border-radius: 20px; font-size: .9rem; white-space: nowrap; }
 .more-title { font-size: 1.4rem; color: var(--dark); margin: 2.5rem 0 .5rem; }
 .price-list { list-style: none; }
-.price-list li { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; padding: .8rem 0; border-bottom: 1px solid rgba(0,0,0,.2); }
+.price-list li { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; padding: .8rem 0; border-bottom: 1px solid rgba(15,61,34,.2); }
 .price-list .svc { flex: 1 1 9rem; font-weight: 700; }
+.amount { font-weight: 700; color: var(--dark); }
 
-/* 7. GALLERY AND REVIEWS */
+/* 8. ABOUT, GALLERY, STEPS, REVIEWS */
+.about { display: grid; gap: 1.5rem; align-items: center; }
+.about img { width: min(300px, 80%); margin: 0 auto; border-radius: 16px; }
+.about p { margin-bottom: 1.2rem; }
 .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: .75rem; }
 .gallery img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 10px; }
+.steps { list-style: none; counter-reset: step; display: grid; gap: 1.25rem; }
+.steps li { counter-increment: step; position: relative; padding-left: 3.4rem; }
+.steps li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 2.4rem; height: 2.4rem; display: grid; place-items: center; border-radius: 50%; background: var(--dark); color: var(--accent); font-weight: 700; }
+.steps h3 { font-size: 1.2rem; color: var(--dark); }
 blockquote { border-left: 4px solid var(--accent); padding: .5rem 1rem; margin-bottom: 1.25rem; font-size: 1.1rem; }
 cite { display: block; margin-top: .4rem; font-size: .9rem; color: var(--dark); font-style: normal; font-weight: 700; }
 
-/* 8. FORM AND CONTACT */
+/* 9. FORM AND CONTACT */
 form { display: grid; gap: .5rem; max-width: 520px; }
 label { font-weight: 700; margin-top: .5rem; }
 input, select, textarea { padding: .75rem; font-size: 1rem; font-family: inherit; background: var(--card); border: 1px solid rgba(0,0,0,.35); border-radius: 6px; }
@@ -67,28 +79,32 @@ input, select, textarea { padding: .75rem; font-size: 1rem; font-family: inherit
 .contact-actions { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
 .contact-actions .btn { margin: 0; }
 
-/* 9. FOOTER */
+/* 10. FOOTER */
 .site-footer { background: var(--dark); color: var(--page); padding: 2rem 1.25rem 6rem; text-align: center; }
 .footer-brand { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1.2rem; }
-.footer-brand .mono { width: 72px; height: 72px; font-size: 1.9rem; border-radius: 14px; }
-.footer-brand .brand-name { font-size: 1.7rem; text-align: left; }
+.footer-brand .mark { width: 72px; height: 72px; }
+.footer-brand .brand-name { color: var(--accent); font-size: 1.7rem; text-align: left; }
+.site-footer .note { font-size: .8rem; opacity: .75; margin-top: .6rem; }
 
-/* 10. FLOATING CALL AND WHATSAPP BUTTONS */
+/* 11. FLOATING CALL AND WHATSAPP BUTTONS */
 .float-btns { position: fixed; right: .9rem; bottom: .9rem; display: flex; flex-direction: column; gap: .6rem; z-index: 9999; }
 .fab { display: flex; align-items: center; justify-content: center; gap: .5rem; padding: .75rem 1.1rem; border-radius: 30px; font-weight: 700; text-decoration: none; color: #fff; box-shadow: 0 4px 12px rgba(0,0,0,.35); }
 .fab.call { background: var(--dark); border: 2px solid var(--accent); color: var(--accent); }
-.fab.wa { background: #25d366; }
+.fab.wa { background: #1a7f43; }
 
-/* 11. LAPTOP AND BIGGER (photo becomes the background) */
+/* 12. LAPTOP AND BIGGER */
 @media (min-width: 768px) {
-  .site-header { padding: .6rem 3rem; }
+  .site-header { padding: .5rem 3rem; }
   .menu-btn { display: none; }
-  .nav { display: flex; flex-direction: row; width: auto; padding: 0; gap: 1.5rem; }
-  .hero { position: relative; min-height: 80vh; display: flex; align-items: center; overflow: hidden; }
-  .hero-img { position: absolute; inset: 0; height: 100%; object-fit: cover; }
-  .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(100deg, rgba(74,19,48,.95) 35%, rgba(74,19,48,.4)); }
-  .hero-text { position: relative; z-index: 1; padding: 4rem 3rem; max-width: 40rem; }
-  .hero h1 { font-size: 3.8rem; }
+  .nav { display: flex; flex-direction: row; width: auto; padding: 0; gap: 1.4rem; }
+  .hero { grid-template-columns: 1.1fr .9fr; align-items: center; min-height: 80vh; padding: 3rem 3rem 3rem 4rem; }
+  .hero h1 { font-size: 3.6rem; }
+  .facts { grid-template-columns: repeat(3, 1fr); padding: 1.5rem 3rem; }
   .cards { grid-template-columns: repeat(3, 1fr); }
+  .about { grid-template-columns: .8fr 1.2fr; }
   .gallery { grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  .steps { grid-template-columns: repeat(3, 1fr); }
 }
+
+/* 13. RESPECT PEOPLE WHO TURN OFF MOTION */
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
