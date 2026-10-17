@@ -3,15 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oserian Farm | Flower farm in Nakuru Town</title>
-  <meta name="description" content="Oserian Farm, Nakuru Town. Roses, carnations, bouquets and event flowers, cut fresh and delivered. Order on WhatsApp.">
+  <title>Oserian Farm | Flower farm in Naivasha</title>
+  <meta name="description" content="Oserian Farm, Naivasha. Roses, carnations, bouquets and event flowers, cut fresh and delivered. Order on WhatsApp.">
   <link rel="icon" href="favicon.ico" sizes="48x48">
   <link rel="icon" type="image/png" href="favicon-192.png" sizes="192x192">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=5">
+  <meta property="og:title" content="Oserian Farm | Fresh flowers in Naivasha">
+  <meta property="og:description" content="Roses, carnations, bouquets and event flowers, cut fresh and delivered. Order on WhatsApp.">
+  <meta name="theme-color" content="#0f3d22">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Florist",
+  "name": "Oserian Farm",
+  "telephone": "+254789509623",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Moi South Lake Road",
+    "addressLocality": "Naivasha",
+    "addressRegion": "Nakuru County",
+    "addressCountry": "KE"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "07:00",
+      "closes": "18:00"
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
@@ -21,10 +54,11 @@
     <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav id="nav" class="nav">
       <a href="#services">Flowers</a>
+      <a href="#farm">Our farm</a>
       <a href="#gallery">Our blooms</a>
-      <a href="#how">How to order</a>
       <a href="#reviews">Reviews</a>
       <a href="#order">Order</a>
+      <a href="#map">Find us</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -34,7 +68,7 @@
     <section class="hero" id="home">
       <div class="hero-text">
         <h1>Fresh flowers, beautiful moments.</h1>
-        <p>Roses, carnations, summer flowers and ready bouquets, cut fresh and delivered in Nakuru Town.</p>
+        <p>Roses, carnations, summer flowers and ready bouquets, cut fresh and delivered from Naivasha.</p>
         <a class="btn" href="#order">Order flowers</a>
         <a class="btn ghost" href="#services">See prices</a>
       </div>
@@ -44,7 +78,7 @@
     <!-- 3. FACTS STRIP -->
     <section class="facts" aria-label="Why order from us">
       <p><strong>Cut fresh</strong> Picked on the farm and delivered.</p>
-      <p><strong>Delivery in town</strong> KES 300 within Nakuru Town.</p>
+      <p><strong>Delivery in town</strong> KES 300 within town.</p>
       <p><strong>Open Monday to Saturday</strong> 7am to 6pm.</p>
     </section>
 
@@ -105,19 +139,84 @@
       </div>
     </section>
 
-    <!-- 6. GALLERY -->
+    <!-- 6. SHOP BY OCCASION -->
+    <section class="section" id="occasions">
+      <h2>Flowers for every moment</h2>
+      <div class="occasions">
+        <a class="occ" href="#order" data-occasion="Birthday"><h3>Birthday</h3><p>Bright bouquets to make the day special.</p><span>Order for this</span></a>
+        <a class="occ" href="#order" data-occasion="Wedding"><h3>Wedding</h3><p>Bridal and event flowers. Ask for a quote.</p><span>Order for this</span></a>
+        <a class="occ" href="#order" data-occasion="Valentine's Day"><h3>Valentine's Day</h3><p>Roses and gift boxes for someone you love.</p><span>Order for this</span></a>
+        <a class="occ" href="#order" data-occasion="Office or event"><h3>Office or event</h3><p>Flowers for tables, reception and events.</p><span>Order for this</span></a>
+        <a class="occ" href="#order" data-occasion="Funeral"><h3>Funeral</h3><p>Respectful flowers for a sad day.</p><span>Order for this</span></a>
+      </div>
+    </section>
+
+    <!-- 7. OUR FARM (greenhouse photos) -->
+    <section class="section dark" id="farm">
+      <h2>Inside our greenhouses</h2>
+      <p class="farm-intro">Our flowers are grown under cover, so they stay healthy and are ready to cut fresh for your order. Tap a photo to see it bigger.</p>
+      <div class="farm-grid">
+        <figure><img src="images/farm/f1.jpg" data-full="images/farm/f1.jpg" alt="Rows of rose plants in a large greenhouse" loading="lazy" width="800" height="533"><figcaption>Our rose greenhouse</figcaption></figure>
+        <figure><img src="images/farm/f2.jpg" data-full="images/farm/f2.jpg" alt="Greenhouse with hanging flower pots and gerberas" loading="lazy" width="800" height="533"><figcaption>Gerberas and hanging flowers</figcaption></figure>
+        <figure><img src="images/farm/f3.jpg" data-full="images/farm/f3.jpg" alt="White and yellow chrysanthemums growing in a greenhouse" loading="lazy" width="600" height="800"><figcaption>Chrysanthemums</figcaption></figure>
+        <figure><img src="images/farm/f4.jpg" data-full="images/farm/f4.jpg" alt="Rows of gerberas under a greenhouse roof" loading="lazy" width="533" height="800"><figcaption>Gerberas in bloom</figcaption></figure>
+        <figure><img src="images/farm/f5.jpg" data-full="images/farm/f5.jpg" alt="Pink, red and orange kalanchoe flowers in a nursery" loading="lazy" width="534" height="800"><figcaption>Our flower nursery</figcaption></figure>
+        <figure><img src="images/farm/f6.jpg" data-full="images/farm/f6.jpg" alt="A path between flowering plants inside a greenhouse" loading="lazy" width="600" height="800"><figcaption>A walk through the greenhouse</figcaption></figure>
+        <figure><img src="images/farm/f7.jpg" data-full="images/farm/f7.jpg" alt="Outside view of a modern greenhouse" loading="lazy" width="534" height="800"><figcaption>Our greenhouses</figcaption></figure>
+        <figure><img src="images/farm/f8.jpg" data-full="images/farm/f8.jpg" alt="Young potted plants on tables in a greenhouse" loading="lazy" width="800" height="533"><figcaption>Young plants</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- 8. GALLERY -->
     <section class="section" id="gallery">
       <h2>Our blooms</h2>
-      <div class="gallery">
-        <img src="images/g1.jpg" alt="A single peach rose" loading="lazy" width="600" height="600">
-        <img src="images/g2.jpg" alt="Peach and pink garden roses" loading="lazy" width="600" height="600">
-        <img src="images/g3.jpg" alt="Yellow and orange roses" loading="lazy" width="600" height="600">
-        <img src="images/g4.jpg" alt="Red carnations" loading="lazy" width="600" height="600">
-        <img src="images/g5.jpg" alt="Pink gerbera daisies" loading="lazy" width="600" height="600">
-        <img src="images/g6.jpg" alt="Pink roses in paper wraps" loading="lazy" width="600" height="600">
-        <img src="images/g7.jpg" alt="Pink and white bouquets" loading="lazy" width="600" height="600">
-        <img src="images/g8.jpg" alt="Close view of pink roses" loading="lazy" width="600" height="600">
+      <div class="gallery" id="galleryGrid">
+        <img src="images/gallery/p01.jpg" data-full="images/gallery/p01.jpg" alt="Yellow and orange roses" loading="lazy" width="600" height="600">
+        <img src="images/gallery/p02.jpg" data-full="images/gallery/p02.jpg" alt="Mixed red, orange, pink and white roses" loading="lazy" width="600" height="600">
+        <img src="images/gallery/p03.jpg" data-full="images/gallery/p03.jpg" alt="Pink roses, close view" loading="lazy" width="600" height="600">
+        <img src="images/gallery/p04.jpg" data-full="images/gallery/p04.jpg" alt="A single peach rose" loading="lazy" width="600" height="600">
+        <img src="images/gallery/p05.jpg" data-full="images/gallery/p05.jpg" alt="Peach and pink garden roses" loading="lazy" width="600" height="600">
+        <img src="images/gallery/p06.jpg" data-full="images/gallery/p06.jpg" alt="Red and pink roses with water drops" loading="lazy" width="600" height="600">
+        <img src="images/gallery/p07.jpg" data-full="images/gallery/p07.jpg" alt="Red roses growing on the bush" loading="lazy" width="600" height="600">
+        <img src="images/gallery/p08.jpg" data-full="images/gallery/p08.jpg" alt="Small red roses on the plant" loading="lazy" width="600" height="600">
+        <img src="images/gallery/p09.jpg" data-full="images/gallery/p09.jpg" alt="Red roses wrapped in red paper" loading="lazy" width="600" height="600">
+        <img src="images/gallery/p10.jpg" data-full="images/gallery/p10.jpg" alt="Red rose bouquet with one white rose" loading="lazy" width="600" height="600">
+        <img src="images/gallery/p11.jpg" data-full="images/gallery/p11.jpg" alt="Red roses in white net wrapping" loading="lazy" width="600" height="600">
+        <img src="images/gallery/p12.jpg" data-full="images/gallery/p12.jpg" alt="White and cream roses in clear wrapping" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p13.jpg" data-full="images/gallery/p13.jpg" alt="White roses with baby&#39;s breath" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p14.jpg" data-full="images/gallery/p14.jpg" alt="Cream and peach roses bouquet" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p15.jpg" data-full="images/gallery/p15.jpg" alt="Pink roses in paper wraps" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p16.jpg" data-full="images/gallery/p16.jpg" alt="Roses in paper wraps in a blue basin" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p17.jpg" data-full="images/gallery/p17.jpg" alt="Pink roses in a pink gift box" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p18.jpg" data-full="images/gallery/p18.jpg" alt="Rose bouquets in clear bags" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p19.jpg" data-full="images/gallery/p19.jpg" alt="Red roses and gerberas in wrapping paper" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p20.jpg" data-full="images/gallery/p20.jpg" alt="Deep red carnations" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p21.jpg" data-full="images/gallery/p21.jpg" alt="Pink carnations" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p22.jpg" data-full="images/gallery/p22.jpg" alt="Coral pink carnations" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p23.jpg" data-full="images/gallery/p23.jpg" alt="Pink and cream carnations in a vase" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p24.jpg" data-full="images/gallery/p24.jpg" alt="Pink and white small carnations" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p25.jpg" data-full="images/gallery/p25.jpg" alt="Red carnations in a vase" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p26.jpg" data-full="images/gallery/p26.jpg" alt="Red carnations in a white pot" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p27.jpg" data-full="images/gallery/p27.jpg" alt="Carnations in paper wraps" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p28.jpg" data-full="images/gallery/p28.jpg" alt="Pink wedding bouquet" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p29.jpg" data-full="images/gallery/p29.jpg" alt="White tulips bouquet" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p30.jpg" data-full="images/gallery/p30.jpg" alt="White orchids bouquet" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p31.jpg" data-full="images/gallery/p31.jpg" alt="Pink and white wedding roses" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p32.jpg" data-full="images/gallery/p32.jpg" alt="Four wrapped bouquets" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p33.jpg" data-full="images/gallery/p33.jpg" alt="Pink and white bouquets" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p34.jpg" data-full="images/gallery/p34.jpg" alt="Wrapped pink and white bouquets" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p35.jpg" data-full="images/gallery/p35.jpg" alt="Pink gerbera daisies" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p36.jpg" data-full="images/gallery/p36.jpg" alt="Sunflower and mixed bouquets" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p37.jpg" data-full="images/gallery/p37.jpg" alt="Sunflowers and roses at a flower stall" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p38.jpg" data-full="images/gallery/p38.jpg" alt="Yellow, purple and white daisies" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p39.jpg" data-full="images/gallery/p39.jpg" alt="White and yellow garden daisies" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p40.jpg" data-full="images/gallery/p40.jpg" alt="Pink and white phlox" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p41.jpg" data-full="images/gallery/p41.jpg" alt="Dried flower bouquets" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p42.jpg" data-full="images/gallery/p42.jpg" alt="Colourful dried flowers in a bucket" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p43.jpg" data-full="images/gallery/p43.jpg" alt="Crates of fresh produce in a delivery truck" loading="lazy" width="600" height="600">
+        <img class="more" src="images/gallery/p44.jpg" data-full="images/gallery/p44.jpg" alt="Stacked cardboard packaging boxes" loading="lazy" width="600" height="600">
       </div>
+      <button class="btn more-btn" id="moreBtn" type="button" aria-expanded="false">Show all 44 photos</button>
     </section>
 
     <!-- 7. HOW TO ORDER -->
@@ -135,6 +234,19 @@
       <h2>What customers say</h2>
       <blockquote>The roses arrived fresh and lasted two weeks. My wife loved them.<cite>Daniel, customer</cite></blockquote>
       <blockquote>They did all the flowers for our wedding, and everything was perfect.<cite>Esther, bride</cite></blockquote>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <h2>Questions and answers</h2>
+      <div class="faq">
+        <details><summary>How do I order?</summary><p>Press any Order button, or fill in the form below. We reply on WhatsApp to confirm the price and your delivery day.</p></details>
+        <details><summary>Do you deliver?</summary><p>Yes. Delivery within town costs KES 300.</p></details>
+        <details><summary>When are you open?</summary><p>Monday to Saturday, 7am to 6pm.</p></details>
+        <details><summary>Can I order flowers for a wedding or an event?</summary><p>Yes. Send us a message on WhatsApp and ask for a quote.</p></details>
+        <details><summary>Do you sell flowers in bulk?</summary><p>Yes, we have wholesale boxes. Ask for a quote on WhatsApp.</p></details>
+        <details><summary>Where are you?</summary><p>Moi South Lake Road, Naivasha, Nakuru County. See the map at the bottom of this page.</p></details>
+      </div>
     </section>
 
     <!-- 9. FORM -->
@@ -165,7 +277,7 @@
     <!-- 10. CONTACT -->
     <section class="section" id="contact">
       <h2>Contact us</h2>
-      <p class="contact-line"><strong>Address:</strong> Nakuru Town, Kenya</p>
+      <p class="contact-line"><strong>Address:</strong> Moi South Lake Road, Naivasha, Nakuru County</p>
       <p class="contact-line"><strong>Phone:</strong> 0789 509 623</p>
       <p class="contact-line"><strong>Hours:</strong> Monday to Saturday, 7am to 6pm</p>
       <p class="contact-actions">
@@ -173,15 +285,27 @@
         <a class="btn-wa" href="https://wa.me/254789509623" target="_blank" rel="noopener">WhatsApp us</a>
       </p>
     </section>
+
+    <!-- 11. GOOGLE MAP -->
+    <section class="section alt" id="map">
+      <h2>Find us</h2>
+      <p class="map-address">Moi South Lake Road, Naivasha, Nakuru County</p>
+      <div class="map-box">
+        <iframe title="Map showing Oserian Farm on Moi South Lake Road, Naivasha" src="https://www.google.com/maps?q=Oserian+Farms,+Moi+South+Lake+Road,+Naivasha&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+      <p><a class="btn" href="https://maps.app.goo.gl/BJFvj7YCDtsG2g4M8" target="_blank" rel="noopener">Open in Google Maps</a></p>
+    </section>
   </main>
 
   <!-- 11. FOOTER -->
   <footer class="site-footer">
     <div class="footer-brand"><img class="mark" src="images/mark.png" alt="" width="72" height="72"><span class="brand-name">Oserian Farm</span></div>
-    <p>Oserian Farm, Nakuru Town</p>
+    <p>Moi South Lake Road, Naivasha, Nakuru County</p>
     <p>Phone: 0789 509 623</p>
     <p class="note">Sample website design for practice. Not the official website.</p>
   </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top" hidden>&#8593;</button>
 
   <!-- 12. FLOATING BUTTONS -->
   <div class="float-btns">
@@ -189,6 +313,6 @@
     <a class="fab wa" data-ask href="https://wa.me/254789509623" target="_blank" rel="noopener" aria-label="WhatsApp Oserian Farm"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 13.9c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11 11 0 01-4.5-4c-.3-.5-1.1-1.6-1.1-2.9s.7-1.9.9-2.2a1 1 0 01.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6-.3.3c-.1.1-.3.3-.1.6a7 7 0 002.7 2.4c.3.1.5.1.7-.1l.9-1.1c.2-.2.4-.2.6-.1l2 1c.3.1.5.2.5.3 0 .2 0 .8-.2 1.3z"/></svg><span>WhatsApp</span></a>
   </div>
 
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>
